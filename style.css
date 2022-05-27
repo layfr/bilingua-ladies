@@ -1,5 +1,34 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: Montserrat-Regular; 
+  src: url(styles/fonts/MontserratAlternates-Regular.woff); 
+  font-weight: 400;
+ }
+
+@font-face {
+  font-family: Montserrat-Light; 
+  src: url(styles/fonts/MontserratAlternates-Light.woff); 
+  font-weight: 200;
+ }
+
+@font-face {
+  font-family: Montserrat-Medium; 
+  src: url(styles/fonts/MontserratAlternates-Medium.woff); 
+  font-weight: 700;
+ }
+
+@font-face {
+  font-family: Forum; 
+  src: url(styles/fonts/Forum-Regular.woff); 
+  font-weight: 400;
+ }
+
+:root {
+  --text-color: #2B2B2B;
+  --red: #A71A22;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -31,7 +60,7 @@ body {
   line-height: 1;
   font-size: 14px;
 
-  
+  color: var(--text-color);
 }
 
 input, button, textarea {
@@ -53,6 +82,7 @@ button::-moz-focus-inner {
 
 a, a:visited {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 a:hover {
@@ -67,8 +97,102 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
+h1, h2, h3 {
+  font-family: 'Forum';
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
 }
 
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.red {
+  color: var(--red);
+}
+
+.header {
+  padding-top: 10px;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  margin-top: 150px;
+  margin-left: 220px;
+
+  position: relative;
+}
+
+.btn-shop {
+  background-image: url(styles/icons/button1.svg);
+  background-repeat: no-repeat;
+
+  margin-top: 60px;
+  padding: 34px 62px 49px;
+
+  width: 245px;
+}
+
+.btn-shop > a {
+  font-family: 'Montserrat-Regular';
+  font-size: 22px;
+  color: var(--red);
+}
+
+.btn-shop > a:hover {
+  color: var(--text-color);
+}
+
+.arrow {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.menu {
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+  font-size: 16px;
+
+  margin-top: 50px;
+}
+
+.menu > ul > li {
+  padding-bottom: 20px;
+}
+
+.menu > ul > li > a:hover {
+  color: var(--red);
+}
+
+.header-img {
+  position: absolute;
+  left: 576px;
+  top: 180px;
+}
