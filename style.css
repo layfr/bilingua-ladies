@@ -27,6 +27,7 @@
 :root {
   --text-color: #2B2B2B;
   --red: #A71A22;
+  --back-color: #EEEBE8;
 }
 
 * {
@@ -110,7 +111,7 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 h3 {
@@ -148,6 +149,7 @@ p {
   margin-left: 220px;
 
   position: relative;
+  height: 650px;
 }
 
 .btn-shop {
@@ -195,4 +197,49 @@ p {
   position: absolute;
   left: 576px;
   top: 180px;
+}
+
+.news {
+  background-color: var(--back-color);
+}
+
+.news-header {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.news-header > p {
+  margin-top: 13px;
+}
+
+.news-header > p:hover {
+  color: var(--red);
+}
+
+.news-slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.news > .btn-shop {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+}
+
+.item-description1 {
+  margin-left: -15px;
+  margin-top: 16px;
+}
+
+.item-description {
+  margin-top: 16px;
+}
+
+.slider-price {
+  font-family: Montserrat-Medium; 
+  margin-top: 8px;
 }
