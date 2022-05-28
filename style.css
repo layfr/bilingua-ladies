@@ -60,6 +60,7 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
+  overflow-x: hidden;
 
   color: var(--text-color);
 }
@@ -345,4 +346,43 @@ height: 546px;
 .values-content4 p {
   margin-top: 30px;
 }
+
+.promo {
+  background-color: var(--back-color);
+  margin-top: 150px;
+  padding: 70px 120px;
+  position: relative;
+}
+
+.btn-collection {
+  background-image: url(styles/icons/btn-collection.svg);
+  background-repeat: no-repeat;
+
+  padding: 42px 62px 49px;
+
+  width: 330px;
+  position: absolute;
+  bottom: 80px; 
+  left: 564px;
+}
+
+.btn-collection a {
+  font-family: 'Montserrat-Regular';
+  font-size: 22px;
+  color: white;
+}
+
+.btn-collection a:hover {
+  color: var(--red);
+}
+
+.btn-shop > a:hover {
+  color: var(--text-color);
+}
+
+.arrow {
+  padding-top: 15px;
+  padding-left: 50px;
+}
+
 
