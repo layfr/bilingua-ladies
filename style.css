@@ -386,3 +386,38 @@ height: 546px;
 }
 
 
+.delivery {
+  margin-top: 70px;
+}
+
+.delivery-header {
+  text-align: center;
+}
+
+.delivery-header p {
+  margin-top: 15px;
+}
+
+.delivery-content {
+  margin-top: 50px;
+  padding: 50px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-content p {
+  padding-top: 20px;
+}
+
+.delivery-ul {
+  font-family: 'Montserrat-Light';
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.delivery-ul li {
+  line-height: 1.4em;
+  margin-bottom: 16px;
+}
+
+
