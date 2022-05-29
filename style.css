@@ -58,7 +58,6 @@ body {
   height: 100%;
   width: 100%;
   font-size: 100%;
-  line-height: 1;
   font-size: 14px;
   overflow-x: hidden;
 
@@ -87,9 +86,6 @@ a, a:visited {
   color: var(--text-color);
 }
 
-a:hover {
-  text-decoration: none;
-}
 
 ul li {
   list-style: none;
@@ -119,6 +115,7 @@ h2 {
 h3 {
   font-family: 'Montserrat-Regular';
   font-size: 24px;
+  font-weight: 400;
 }
 
 p {
@@ -376,11 +373,11 @@ height: 546px;
   color: var(--red);
 }
 
-.btn-shop > a:hover {
+.btn-shop a:hover {
   color: var(--text-color);
 }
 
-.arrow {
+.arrow-white {
   padding-top: 15px;
   padding-left: 50px;
 }
@@ -420,4 +417,143 @@ height: 546px;
   margin-bottom: 16px;
 }
 
+.last-section {
+  position: relative;
+}
 
+.last-section-header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.last-section-header p {
+  margin-top: 13px;
+}
+
+.shop {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.shop-content {
+  margin-left: 40px;
+}
+
+.shop-content h3 {
+  margin-bottom: 16px;
+}
+
+.inst {
+  margin-top: 100px;
+}
+
+.inst-img {
+  display: flex;
+  width: 450px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.img-element {
+  margin: 20px;
+}
+
+.img-element:nth-child(odd) {
+  margin-left: 0;
+}
+
+.mailing {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+
+.mailing-img {
+  display: flex;
+  align-items: center;
+}
+
+.mailing-img img {
+  margin-left: 60px;
+}
+
+.mailing-content {
+  padding-top: 40px;
+  margin-left: 50px;
+}
+
+.mailing-content p {
+  margin-top: 20px;
+}
+
+.email-input {
+  display: flex;
+  width: 550px;
+  height: 60px;
+  margin-top: 30px;
+}
+
+.email-input-text {
+  display: block;
+  width: 280px;
+  height: 60px;
+  padding-left: 18px;
+
+  border: 1px #2B2B2B solid;
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5em;
+  
+  
+}
+
+.email-input-text::placeholder {
+  color: #AAA;
+}
+
+.email-input-btn {
+  display: block;
+  background-color: var(--red);
+  width: 280px;
+
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: white;
+}
+
+.email-input-btn:hover {
+  background-color: #97080f;
+}
+
+.container-footer {
+  background-color: var(--back-color);
+  height: 150px;
+
+  margin-top: 100px;
+}
+
+.footer {
+  width: 1300px;
+  
+  padding: 46px 0;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-link:hover {
+  text-decoration: solid;
+}
+
+.footer-icons {
+  margin-top: 2px;
+}
+
+.facebook-icon {
+  margin-left: 18px;
+}
