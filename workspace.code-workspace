@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../vs code/Bilingua Ladies"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Bilingua-Ladies"
+	}
+}
