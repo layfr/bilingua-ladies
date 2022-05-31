@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bilingua Ladies</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,8 +13,11 @@
         <div class="container">
             <div class="nav">
                 <div class="logo"><a href="#"><img src="styles/icons/logo.svg" alt="Bilingua Ladies"></a></div>
-                <div class="description"><p>Санкт-Петербург и доставка в любую точку мира</p></div>
-                <div class="search"><img src="styles/icons/icon find.svg"></div>
+                <div class="description"><a href="#delivery">Санкт-Петербург и доставка в любую точку мира</a></div>
+                <form class="search" action="">
+                    <input class="search-input" type="text" placeholder="Поиск.." name="search">
+                    <button type="submit"><i class="fa-search"></i><img class="search-icon" src="styles/icons/icon find.svg"></button>
+                  </form>
             </div>
 
             <div class="header-content">
@@ -24,13 +26,13 @@
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-item">
-                            <a class="menu-link" href="">наши ценности</a>
+                            <a class="menu-link" href="#values">наши ценности</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="">доставка</a>
+                            <a class="menu-link" href="#delivery">доставка</a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="">контакты</a>
+                            <a class="menu-link" href="#contacts">контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -47,29 +49,27 @@
                     <h2>Новинки</h2>
                     <p>Все коллекции выпускаются ограниченными тиражами</p>
                 </div>
-            </div>
+         
 
-            <div class="news-slider">
-                <div class="item item-1"><img src="img/slider1.jpg">
-                    <div class="item-description1"><p>Комбинируемый лиф Blush</p><p class="slider-price">1400 руб.</p></div>
+                <div class="news-slider">
+                    <div class="item item-1"><img src="img/slider1.jpg">
+                        <div class="item-description"><p>Комбинируемый лиф Blush</p><p class="slider-price">1400 руб.</p></div>
+                    </div>
+                    <div class="item item-2">
+                        <img src="img/slider2.jpg">
+                        <div class="item-description"><p>Домашние штаны Onyx (vintage dyed)</p><p class="slider-price">2600 руб.</p></div>
+                    </div>
+                    <div class="item item-3"><img src="img/slider3.jpg">
+                        <div class="item-description"><p>Комбинируемые высокие шорты<br> Dusty cedar</p><p class="slider-price">600 руб.</p></div>
+                    </div>
                 </div>
-                <div class="item item-2">
-                    <img src="img/slider2.jpg">
-                    <div class="item-description"><p>Домашние штаны Onyx (vintage dyed)</p><p class="slider-price">2600 руб.</p></div>
-                </div>
-                <div class="item item-3"><img src="img/slider3.jpg">
-                    <div class="item-description"><p>Комбинируемые высокие шорты<br> Dusty cedar</p><p class="slider-price">600 руб.</p></div>
-                </div>
-                <div class="item item-4"><img src="img/slider4.jpg">
-                    <div class="item-description"><p>Комбинируемый лиф White </p><p class="slider-price">1400 руб.</p></div>
-                </div>
+                <div class="btn-shop"><a href="#">в магазин<br><img class="arrow" src="styles/icons/Arrow 3.svg"></a></div>
             </div>
-            <div class="btn-shop"><a href="#">в магазин<br><img class="arrow" src="styles/icons/Arrow 3.svg"></a></div>
         </section>
 
         <section class="values">
             <div class="container">
-                <div class="values-header">
+                <div class="values-header" id="values">
                     <h2>Наши ценности</h2>
                     <p>О том, что для нас важно</p>
                 </div>
@@ -127,7 +127,7 @@
             </div>
         </section>
 
-        <section class="delivery">
+        <section class="delivery" id="delivery">
             <div class="container">
                 <div class="delivery-header">
                     <h2>Доставка</h2>
@@ -162,7 +162,7 @@
             </div>
         </section>
 
-        <section class="last-section">
+        <section class="last-section" id="contacts">
             <div class="container last-section"> 
             <div class="last-section-header">
                 <h2>Наш магазин в Санкт-Петербурге</h2>
@@ -230,5 +230,6 @@
             </section>
         </section> 
     </footer>
+
 </body>
 </html>
