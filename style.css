@@ -34,6 +34,9 @@
   padding: 0;
   margin: 0;
   border: 0;
+
+  scroll-behavior: smooth; 
+  transition: 0.5s;
 }
 
 *, *:before, *:after {
@@ -41,6 +44,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 
 :focus, :active {
   outline: none;
@@ -60,8 +64,6 @@ body {
 
   font-size: 100%;
   font-size: 14px;
-
-
 
   color: var(--text-color);
 }
@@ -229,14 +231,17 @@ img.arrow {
 }
 
 .news-slider {
-
   display: flex;
-  min-width: 0;
 
   justify-content: space-between;
   align-items: center;
 
   margin-top: 60px;
+}
+
+
+.item:hover {
+  transform: scale(1.1);
 }
 
 .news .btn-shop {
@@ -287,6 +292,10 @@ img.arrow {
   padding-left: 70px;
 }
 
+.values-content:hover {
+  transform: scale(1.05);
+}
+
 .values-content p {
   margin-top: 30px;
 }
@@ -298,6 +307,7 @@ img.arrow {
   margin-top: 93px;
   margin-left: 50px;
 }
+
 
 .img2 {
   height: 340px;
@@ -313,6 +323,7 @@ img.arrow {
 .values-content3 {
   margin-left: 50px;
 }
+
 
 .values-content3 {
   width: 670px;
@@ -383,6 +394,8 @@ img.arrow {
   font-family: 'Montserrat-Regular';
   font-size: 22px;
   color: white;
+
+  transition: 1s;
 }
 
 .btn-collection a:hover {
@@ -543,7 +556,7 @@ img.arrow {
 }
 
 .email-input-btn:hover {
-  background-color: #97080f;
+  background-color: #84060c;
 }
 
 .container-footer {
@@ -563,9 +576,24 @@ img.arrow {
   margin: 0 auto;
 }
 
-.email-link:hover {
-  text-decoration: solid;
+.email-link {
+  transition: 1s;
 }
+
+.email-link:hover {
+  color: var(--red);
+}
+
+
+.adress:hover {
+  color: var(--red);
+}
+
+
+.inst-link:hover {
+  color: var(--red);
+}
+
 
 .footer-icons {
   margin-top: 2px;
