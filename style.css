@@ -766,6 +766,10 @@ img.arrow {
   height: 440px;
 }
 
+.shop-card-img:hover {
+  transform: scale(1.05);
+}
+
 .shop-card-description {
   margin-top: 16px;
 }
@@ -780,3 +784,12 @@ img.arrow {
 .shop-card-price-text {
   font-family: 'Montserrat-Medium';
 }
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.shop-btn-arrow:hover {
+  transform: scale(1.05);
+}
+
