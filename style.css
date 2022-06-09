@@ -1,27 +1,23 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: Montserrat-Regular; 
+  font-family: 'Montserrat-Regular'; 
   src: url(styles/fonts/MontserratAlternates-Regular.woff); 
-  font-weight: 400;
  }
 
 @font-face {
-  font-family: Montserrat-Light; 
+  font-family: 'Montserrat-Light'; 
   src: url(styles/fonts/MontserratAlternates-Light.woff); 
-  font-weight: 200;
  }
 
 @font-face {
-  font-family: Montserrat-Medium; 
+  font-family: 'Montserrat-Medium'; 
   src: url(styles/fonts/MontserratAlternates-Medium.woff); 
-  font-weight: 700;
  }
 
 @font-face {
-  font-family: Forum; 
+  font-family: 'Forum'; 
   src: url(styles/fonts/Forum-Regular.woff); 
-  font-weight: 400;
  }
 
 :root {
@@ -52,7 +48,9 @@
 
 a:focus, a:active {
   outline: none;
+  color: var(--red);
 }
+
 
 nav, footer, header, aside {
   display: block;
@@ -81,12 +79,16 @@ a, a:visited {
 
 ul li {
   list-style: none;
+
+  font-family: 'Montserrat-Light';
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 h1, 
 h2 {
   font-family: 'Forum';
-  font-weight: 400;
+  font-weight: 200;
 }
 
 h1 {
@@ -105,7 +107,6 @@ h3 {
 
 p {
   font-family: 'Montserrat-Light';
-  font-weight: 300;
   font-size: 16px;
   line-height: 1.5em;
 }
@@ -131,7 +132,6 @@ p {
 
 a {
   font-family: 'Montserrat-Light';
-  font-weight: 300;
   font-size: 16px;
   line-height: 1.5em;
 }
@@ -139,14 +139,12 @@ a {
 .description a:hover {
   color: var(--red);
   font-family: 'Montserrat-Light';
-  font-weight: 300;
   font-size: 16px;
   line-height: 1.5em;
 }
 
 .search {
   font-family: 'Montserrat-Light';
-  font-weight: 300;
   font-size: 16px;
   line-height: 1.5em; 
 }
@@ -155,6 +153,9 @@ a {
   width: 100px;
 }
 
+.btn-search {
+  background-color: white;
+}
 
 .header-content {
   margin-top: 150px;
@@ -211,6 +212,9 @@ img.arrow {
 
   left: 576px;
   top: 180px;
+
+  width: 405px;
+  height: 320px;
 }
 
 .news {
@@ -376,6 +380,11 @@ img.arrow {
   margin-top: 150px;
   padding: 70px 120px;
   position: relative;
+}
+
+.promo-img {
+  width: 1200px;
+  height: 648px;
 }
 
 .btn-collection {
@@ -601,4 +610,173 @@ img.arrow {
 
 .facebook-icon {
   margin-left: 18px;
+}
+
+
+
+/*    shop    */
+
+.nav-shop {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-shop-category {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+
+  width: 338px;
+
+  position: relative;
+}
+
+.shop-sort-text {
+  margin-right: 80px;
+}
+
+.shop-sort {
+  display: flex;
+  position: relative;
+  margin-right: 80px;
+}
+
+.shop-sort-ul {
+  position: absolute;
+  left: 170px;
+  background-color: white;
+  width: 200px;
+
+  padding: 0 15px 15px;
+}
+
+.shop-sort-ul a {
+  font-family: 'Montserrat-Medium';
+  margin-top: 8px;
+}
+
+
+.shop-sort a:hover {
+  color: var(--red);
+  transition: none;
+}
+
+.shop-sort-ul-hide {
+  display: none;
+}
+
+.shop-sort:hover .shop-sort-ul-hide {
+  display: block;
+}
+
+.btn-shop-category-one::before {
+  content: '';
+  background-image: url(styles/icons/ellipse-button.svg);
+  background-repeat: no-repeat;
+
+  width: 185px;
+  height: 70px;
+
+  position: absolute;
+  left: -25px;
+  top: -18px;
+
+  z-index: -1;
+
+  opacity: 0%;
+}
+
+.btn-shop-category-one:hover::before{
+  content: '';
+  background-image: url(styles/icons/ellipse-button.svg);
+  background-repeat: no-repeat;
+
+  width: 185px;
+  height: 70px;
+
+  position: absolute;
+  left: -25px;
+  top: -18px;
+
+  z-index: -1;
+
+  opacity: 100%;
+}
+
+.btn-shop-category-one-text:hover {
+  color: var(--red);
+}
+
+.btn-shop-category-two-text:hover {
+  color: var(--red);
+}
+
+.btn-shop-category-two::before {
+  content: '';
+  background-image: url(styles/icons/ellipse-button.svg);
+  background-repeat: no-repeat;
+
+  width: 185px;
+  height: 70px;
+
+  position: absolute;
+  left: -25px;
+  top: -18px;
+
+  z-index: -1;
+
+  opacity: 0%;
+}
+
+.btn-shop-category-two:hover::before{
+  content: '';
+  background-image: url(styles/icons/ellipse-button.svg);
+  background-repeat: no-repeat;
+
+  width: 185px;
+  height: 70px;
+
+  position: absolute;
+  left: 195px;
+  top: -18px;
+
+  z-index: -1;
+
+  opacity: 100%;
+}
+
+.search2 {
+  margin-right: -200px;
+  font-family: 'Montserrat-Light';
+}
+
+.shop-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shop-card {
+  margin-top: 50px;
+}
+
+.shop-card-img img {
+  width: 295px;
+  height: 440px;
+}
+
+.shop-card-description {
+  margin-top: 16px;
+}
+
+.shop-card-price {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 6px;
+}
+
+.shop-card-price-text {
+  font-family: 'Montserrat-Medium';
 }
